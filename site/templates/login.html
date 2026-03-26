@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BnP Login</title>
+    <style>
+        html, body {
+            font-family: Arial, Helvetica, sans-serif;
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
+            display: flex;
+            justify-content: center; /* horizontal */
+            align-items: center;     /* vertical */
+            flex-direction: column;
+            background-color: rgb(162, 162, 162);
+        }
+        #logo {
+            display: flex;
+            width: 300px;
+            max-width: 100%;
+            height: auto;
+            text-align: center;
+            justify-content: center; /* horizontal */
+            align-items: center;  
+        }
+        .horizontal {
+            display: flex;
+            justify-content: center; /* horizontal */
+            align-items: center;  
+            flex-direction: row;
+        }
+        .vertical {
+            display: flex;
+            align-items: center;  
+            flex-direction: column;
+        }
+        .form {
+            margin: 15px;
+        }
+        .container {
+            display: flex;
+            justify-content: center; /* horizontal */
+            align-items: center;  
+        }
+        .bigDaddy {
+            background-color: antiquewhite;
+            padding: 2%;
+            border-radius: 25px;
+        }
+        .hidden {
+            display: none;
+        }
+        #error {
+            color: rgb(198, 0, 0);
+            text-align: center;
+        }
+    </style>
+    <script type="module" src="/static/page/login.js"></script>
+</head>
+<body>
+    <div class="bigDaddy">
+        <div class="container">
+            <a href="/"><img id="logo" src="/static/beenarAndPaulsBank.png"></a>
+            <div class="horizontal">
+                <div class="vertical">
+                    <form id="loginForm" class="vertical form">
+                        <h1>Log In</h1>
+                        
+                        <input type="text" id="userid" name="userid" placeholder="User ID" maxlength="4" required>
+                        <br>
+                        <input type="password" id="loginPassword" name="password" placeholder="Password" maxlength="64" required>
+                        <br>
+                        <button type="submit">Log In</button>
+                    </form>
+                </div>
+                <div class="vertical">
+                    <form id="makeAccountForm" class="vertical form">
+                        <h1>Make Account</h1>
+                        <input type="text" id="username" name="username" placeholder="Username" maxlength="32" required>
+                        <br>
+                        <input type="password" id="createPassword" name="password" placeholder="Password" maxlength="64" required>
+                        <br>
+                        <button type="submit">Make Account</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <h2 id="error" class="hidden">Error:</h2>
+    </div>
+</body>
+</html>

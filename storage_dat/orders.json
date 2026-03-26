@@ -1,0 +1,212 @@
+{
+    "ids": {
+        "5DA90B81": {
+            "type": 1,
+            "to_user": "3434",
+            "from_user": "89DA",
+            "currency_type": 2,
+            "currency_id": "4039",
+            "amount": 65
+        },
+        "8DAF7085": {
+            "type": 1,
+            "to_user": "3434",
+            "from_user": "89DA",
+            "currency_type": 2,
+            "currency_id": "4039",
+            "amount": 65
+        },
+        "E17829D5": {
+            "type": 1,
+            "to_user": "494B",
+            "from_user": "89DA",
+            "currency_type": 2,
+            "currency_id": "4039",
+            "amount": 65
+        },
+        "BFCD69D6": {
+            "type": 1,
+            "to_user": "494B",
+            "from_user": "89DA",
+            "currency_type": 2,
+            "currency_id": "4039",
+            "amount": 65
+        },
+        "C3BC6685": {
+            "type": 1,
+            "to_user": "494B",
+            "from_user": "89DA",
+            "currency_type": 1,
+            "currency_id": "3346",
+            "amount": 20
+        },
+        "CD113EB8": {
+            "type": 1,
+            "to_user": "494B",
+            "from_user": "89DA",
+            "currency_type": 2,
+            "currency_id": "307A",
+            "amount": 8
+        },
+        "1F776608": {
+            "type": 1,
+            "to_user": "494B",
+            "from_user": "89DA",
+            "currency_type": 2,
+            "currency_id": "307A",
+            "amount": 8
+        },
+        "AC789E15": {
+            "type": 2,
+            "to_user": "494B",
+            "from_user": "89DA",
+            "currency_type": 2,
+            "currency_id": "307A",
+            "amount": 1500
+        },
+        "2BBF705B": {
+            "type": 2,
+            "to_user": "494B",
+            "from_user": "89DA",
+            "currency_type": 1,
+            "currency_id": "3346",
+            "amount": 128000
+        },
+        "52C816F6": {
+            "type": 1,
+            "to_user": "89DA",
+            "from_user": "494B",
+            "currency_type": 2,
+            "currency_id": "902F",
+            "amount": 65
+        },
+        "A7A74985": {
+            "type": 1,
+            "to_user": "89DA",
+            "from_user": "494B",
+            "currency_type": 2,
+            "currency_id": "902F",
+            "amount": 65
+        },
+        "1A79A5A2": {
+            "type": 1,
+            "to_user": "494B",
+            "from_user": "89DA",
+            "currency_type": 2,
+            "currency_id": "902F",
+            "amount": 120
+        },
+        "48143839": {
+            "type": 1,
+            "to_user": "494B",
+            "from_user": "89DA",
+            "currency_type": 1,
+            "currency_id": "3346",
+            "amount": 1
+        },
+        "8B116037": {
+            "type": 2,
+            "to_user": "494B",
+            "from_user": "89DA",
+            "currency_type": 2,
+            "currency_id": "902F",
+            "amount": 80
+        },
+        "167D68C2": {
+            "type": 2,
+            "to_user": "494B",
+            "from_user": "89DA",
+            "currency_type": 2,
+            "currency_id": "902F",
+            "amount": 80
+        },
+        "364FE53B": {
+            "type": 2,
+            "to_user": "494B",
+            "from_user": "89DA",
+            "currency_type": 2,
+            "currency_id": "902F",
+            "amount": 80
+        },
+        "DC404CE4": {
+            "type": 2,
+            "to_user": "494B",
+            "from_user": "89DA",
+            "currency_type": 2,
+            "currency_id": "902F",
+            "amount": 80
+        },
+        "E97B0909": {
+            "type": 1,
+            "to_user": "494B",
+            "from_user": "89DA",
+            "currency_type": 2,
+            "currency_id": "4A61",
+            "amount": 4
+        },
+        "8710CEE8": {
+            "type": 2,
+            "to_user": "89DA",
+            "from_user": "494B",
+            "currency_type": 1,
+            "currency_id": "3346",
+            "amount": 56000
+        },
+        "B7A40245": {
+            "type": 2,
+            "to_user": "FE6D",
+            "from_user": "89DA",
+            "currency_type": 2,
+            "currency_id": "4A61",
+            "amount": 150
+        },
+        "B6C82408": {
+            "type": 2,
+            "to_user": "89DA",
+            "from_user": "DB32",
+            "currency_type": 1,
+            "currency_id": "3346",
+            "amount": 67
+        },
+        "3CFE597C": {
+            "type": 2,
+            "to_user": "DB32",
+            "from_user": "89DA",
+            "currency_type": 1,
+            "currency_id": "3346",
+            "amount": 67
+        },
+        "ECB9E9C3": {
+            "type": 2,
+            "to_user": "7F07",
+            "from_user": "89DA",
+            "currency_type": 2,
+            "currency_id": "5F07",
+            "amount": 35
+        },
+        "A765DC32": {
+            "type": 2,
+            "to_user": "7F07",
+            "from_user": "89DA",
+            "currency_type": 2,
+            "currency_id": "5F07",
+            "amount": 35
+        },
+        "D200EF1A": {
+            "type": 2,
+            "to_user": "638E",
+            "from_user": "89DA",
+            "currency_type": 2,
+            "currency_id": "543E",
+            "amount": 500
+        },
+        "644AD4C3": {
+            "type": 1,
+            "to_user": "638E",
+            "from_user": "89DA",
+            "currency_type": 2,
+            "currency_id": "EAB2",
+            "amount": 15
+        }
+    }
+}

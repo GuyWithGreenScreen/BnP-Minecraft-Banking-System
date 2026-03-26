@@ -1,0 +1,255 @@
+{
+    "ids": {
+        "E9E1": {
+            "name": "Slimezz",
+            "backing": 42.463597009051554,
+            "creator_id": "02AC",
+            "minted_amount": 4,
+            "backing_res_id": "B728",
+            "initial_buy": 4,
+            "history": [
+                {
+                    "time": 1769208529.5611274,
+                    "backing": 20,
+                    "price": 5
+                },
+                {
+                    "time": 1769208588.3390114,
+                    "backing": 9.090909090909092,
+                    "price": 2.272727272727273
+                },
+                {
+                    "time": 1769208591.487483,
+                    "backing": 7.070707070707071,
+                    "price": 1.7676767676767677
+                },
+                {
+                    "time": 1769208595.6272652,
+                    "backing": 11.784511784511785,
+                    "price": 2.9461279461279464
+                },
+                {
+                    "time": 1769208598.8454168,
+                    "backing": 7.070707070707071,
+                    "price": 1.7676767676767677
+                },
+                {
+                    "time": 1769208615.9186928,
+                    "backing": 30.639730639730644,
+                    "price": 7.659932659932661
+                },
+                {
+                    "time": 1769217374.104699,
+                    "backing": 42.46359700905156,
+                    "price": 10.61589925226289
+                },
+                {
+                    "time": 1769217378.4206593,
+                    "backing": 33.027242118151214,
+                    "price": 8.256810529537804
+                },
+                {
+                    "time": 1769217408.322593,
+                    "backing": 42.46359700905156,
+                    "price": 10.61589925226289
+                },
+                {
+                    "time": 1769217410.6792583,
+                    "backing": 33.027242118151214,
+                    "price": 8.256810529537804
+                },
+                {
+                    "time": 1769217414.08388,
+                    "backing": 42.46359700905156,
+                    "price": 10.61589925226289
+                },
+                {
+                    "time": 1769217415.677848,
+                    "backing": 33.027242118151214,
+                    "price": 8.256810529537804
+                },
+                {
+                    "time": 1769217542.8234355,
+                    "backing": 42.46359700905156,
+                    "price": 10.61589925226289
+                },
+                {
+                    "time": 1769217547.6913414,
+                    "backing": 33.027242118151214,
+                    "price": 8.256810529537804
+                },
+                {
+                    "time": 1769217554.7602842,
+                    "backing": 25.687854980784277,
+                    "price": 6.421963745196069
+                },
+                {
+                    "time": 1769464052.6623306,
+                    "backing": 55.04540353025202,
+                    "price": 13.761350882563004
+                },
+                {
+                    "time": 1769464062.9667952,
+                    "backing": 70.7726616817526,
+                    "price": 17.69316542043815
+                },
+                {
+                    "time": 1769464063.10459,
+                    "backing": 90.99342216225334,
+                    "price": 22.748355540563335
+                },
+                {
+                    "time": 1769464068.4320378,
+                    "backing": 70.7726616817526,
+                    "price": 17.69316542043815
+                }
+            ],
+            "coin_id": "E9E1"
+        },
+        "0FF6": {
+            "name": "Bomb",
+            "backing": 3,
+            "creator_id": "02AC",
+            "minted_amount": 3,
+            "backing_res_id": "B728",
+            "initial_buy": 3,
+            "history": [
+                {
+                    "time": 1770004899.2253683,
+                    "backing": 3,
+                    "price": 1
+                }
+            ],
+            "coin_id": "0FF6"
+        },
+        "7DC2": {
+            "name": "Vladydady",
+            "backing": 33.28,
+            "creator_id": "BCDB",
+            "minted_amount": 16,
+            "backing_res_id": "B84A",
+            "initial_buy": 16,
+            "history": [
+                {
+                    "time": 1770005121.5899334,
+                    "backing": 64,
+                    "price": 4
+                },
+                {
+                    "time": 1770005192.1452785,
+                    "backing": 99.84,
+                    "price": 6.24
+                },
+                {
+                    "time": 1770005199.8764746,
+                    "backing": 33.28,
+                    "price": 2.08
+                }
+            ],
+            "coin_id": "7DC2"
+        },
+        "FC64": {
+            "name": "NIGGACOIN",
+            "backing": 60.0,
+            "creator_id": "79E1",
+            "minted_amount": 6,
+            "backing_res_id": "B84A",
+            "initial_buy": 6,
+            "history": [
+                {
+                    "time": 1770005135.047486,
+                    "backing": 60,
+                    "price": 10
+                },
+                {
+                    "time": 1770005241.18572,
+                    "backing": 120.0,
+                    "price": 20.0
+                },
+                {
+                    "time": 1770005252.8144796,
+                    "backing": 60.0,
+                    "price": 10.0
+                }
+            ],
+            "coin_id": "FC64"
+        },
+        "7502": {
+            "name": "FAGCOIN",
+            "backing": 1,
+            "creator_id": "79E1",
+            "minted_amount": 1,
+            "backing_res_id": "B84A",
+            "initial_buy": 1,
+            "history": [
+                {
+                    "time": 1770005285.6263766,
+                    "backing": 1,
+                    "price": 1
+                }
+            ],
+            "coin_id": "7502"
+        },
+        "4B97": {
+            "name": "THEZUCC",
+            "backing": -13.236755823986186,
+            "creator_id": "79E1",
+            "minted_amount": 1,
+            "backing_res_id": "B84A",
+            "initial_buy": 1,
+            "history": [
+                {
+                    "time": 1770005301.7077403,
+                    "backing": 1,
+                    "price": 1
+                },
+                {
+                    "time": 1770005313.2977355,
+                    "backing": 3.0,
+                    "price": 3.0
+                },
+                {
+                    "time": 1770005315.6908371,
+                    "backing": 9.0,
+                    "price": 9.0
+                },
+                {
+                    "time": 1770005317.1292741,
+                    "backing": 27.0,
+                    "price": 27.0
+                },
+                {
+                    "time": 1770005334.236854,
+                    "backing": 66.18377911993097,
+                    "price": 66.18377911993097
+                }
+            ],
+            "coin_id": "4B97"
+        },
+        "D879": {
+            "name": "SLAVECOIN",
+            "backing": 1,
+            "creator_id": "79E1",
+            "minted_amount": 1,
+            "backing_res_id": "B84A",
+            "initial_buy": 1,
+            "history": [
+                {
+                    "time": 1770005333.7782438,
+                    "backing": 1,
+                    "price": 1
+                }
+            ],
+            "coin_id": "D879"
+        }
+    },
+    "names": {
+        "Slimezz": "E9E1",
+        "Bomb": "0FF6",
+        "Vladydady": "7DC2",
+        "NIGGACOIN": "FC64",
+        "FAGCOIN": "7502",
+        "THEZUCC": "4B97",
+        "SLAVECOIN": "D879"
+    }
+}

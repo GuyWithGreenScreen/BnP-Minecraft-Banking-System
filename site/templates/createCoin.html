@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BnP Coin Trader</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #logo {
+            width: 300px;
+            max-width: 100%;
+            height: auto;
+        }
+        .header {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            align-items: center;
+            margin-left: 15%;
+            margin-right: 15%;
+        }
+        .centerLogo {
+            justify-self: center;
+        }
+        .leftButtons {
+            text-align: center;
+            justify-self: right;
+            padding-right: 15%;
+        }
+        .rightButtons {
+            text-align: center;
+            justify-self: left;
+            padding-left: 15%;
+        }
+        #headerButton {
+            margin: 0;
+            justify-content: center;
+        }
+        .gridContainer {
+            display: flex;
+            justify-content: center; /* horizontal */
+            align-items: center;  
+            flex-direction: row;
+        }
+        .infoContainer {
+            margin-right: auto;
+            text-align: center;
+        }
+        .chartContainer {
+            margin-right: auto;
+            padding-top: 15px;
+            margin-left: 25px;
+        }
+        #itemChart {
+            width: 100%;
+            height: 600px;
+            display: block;
+            border-radius: 10px;
+            border-style:solid;
+            border-color: black;
+            background-color: rgb(238, 245, 255);
+        }
+        .hidden {
+            display: none;
+        }
+                .resourcePortfolio,
+        .coinPortfolio {
+            text-align: center;
+        }
+        .resource_coin_text {
+            font-size: 220%;
+        }
+        .resourceGrid,
+        .coinGrid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1rem;
+            padding: 0 80px;
+        }
+        .gridItem {
+            aspect-ratio: 1 / 1;
+            background-image: linear-gradient(rgb(110, 196, 249), rgb(149, 175, 216));
+            border-radius: 15px;
+            max-width: 260px;
+            min-width: 260px;
+            min-height: 360px;
+            max-height: 360px;
+            margin: 15px;
+        }
+        .coinGridItem {
+            aspect-ratio: 1 / 1;
+            background-image: linear-gradient(rgb(249, 193, 110), rgb(215, 216, 149));
+            border-radius: 15px;
+            max-width: 260px;
+            min-width: 260px;
+            min-height: 360px;
+            max-height: 360px;
+            margin: 15px;
+        }
+        .hidden {
+            display: none;
+        }
+        .itemName {
+            margin-top: 5px;
+            margin-bottom: 0;
+        }
+        .itemID {
+            overflow-wrap: anywhere;
+            word-break: break-word;
+            margin: 0 0;
+        }
+        .currencyID {
+            overflow-wrap: anywhere;
+            word-break: break-word;
+            margin: 0 0;
+        }
+        .itemBalance {
+            margin: 1% 0;
+        }
+        .itemChart {
+            width: 100%;
+            height: 60px;
+            display: block;
+            border-radius: 50px;
+            border-width: 4px;
+            border-color: black;
+            background-color: beige;
+            padding: 14px;
+        }
+        .nopad {
+            margin: 0;
+        }
+        .vertical {
+            display: flex;
+            align-items: center;  
+            flex-direction: column;
+            text-align: center;
+        }
+        #createCoinForm {
+            background-image: linear-gradient(rgb(216, 187, 143), rgb(237, 238, 173));
+            padding: 45px;
+            border-radius: 25px;
+        }
+        .hidden {
+            display: none;
+        }
+        #log {
+            color: rgb(211, 32, 32);
+        }
+    </style>
+    <script src="/static/core/chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3.0.0"></script>
+    <script type="module" src="/static/page/createCoin.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="leftButtons">
+            <p>Analyze The Resource Market</p>
+            <a href="resources"><button id="headerButton"><h1>RESOURCES</h1></button></a>
+        </div>
+        <div class="centerLogo">
+            <a href="/"><img id="logo" src="/static/beenarAndPaulsBank.png"></a>
+        </div>
+        <div class="rightButtons">
+            <p>Trade and Make Our FINEST $HIT Coins</p>
+            <a href="coins"><button id="headerButton"><h1>COINS</h1></button></a>
+        </div>
+    </div>
+    <p style="background-color: rgb(216, 173, 92); margin: 0; text-align: center;">BnP Coin Trader</p>
+    <hr class="seperator" style="margin-top: 0;">
+    <div class="vertical">
+        <h1>CREATE COIN</h1>
+        <form id="createCoinForm">
+            <h4>Name of the coin</h4>
+            <label>
+                Coin Name:
+                $<input type="text" id="coin_name" name="coin_name" placeholder="Coin Name" required>
+            </label>
+            <br>
+            <h4>The resource you want to back the coin with (What people will buy it with)</h4>
+            <label>
+                Backed By:
+                <select name="backing_resource" id="backing_resource_select" required>
+                </select required>
+            </label>
+            <br>
+            <h4>Set the initial coin price</h4>
+            <label>
+                Coin Price:
+                <input type="number" step="0.01" min="0" id="coin_price" name="coin_price" placeholder="Coin Price" required>
+            </label>
+            <br>
+            <h4>How much coins to mint initially</h4>
+            <label>
+                Initial Mint Amount:
+                <input type="number" step="0.01" min="0" id="mint_amount" name="mint_amount" placeholder="Mint Amount" required>
+            </label>
+
+            <h3>COST FOR CREATION:</h3>
+            <h4 id="totalCost">Invalid Inputs</h4>
+            <h4 id="log" class="hidden">Logger</h4>
+
+            <br>
+            <button id="submitButton" type="submit">Create Coin</button>
+        </form>
+    </div>
+
+
+
+</body>
+</html>

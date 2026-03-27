@@ -33,4 +33,13 @@ def resetPassword(user_id, new_password):
         json.dump(USER_JSON, open("../storage_dat/users.json", "w"))
 
 
-resetPassword("02AC", "fish")
+"""
+    TO RESET A PASSWORD, DO:
+        resetPassword("<user_id>", "<new_password>")
+    TO GENERATE AN API KEY, DO:
+        createKey()
+        
+        ^ THIS KEY WILL BE STORED AUTOMATICALLY IN ../storage_dat/api_keys.json
+"""
+
+# resetPassword("02AC", "fish") OLD EXAMPLE

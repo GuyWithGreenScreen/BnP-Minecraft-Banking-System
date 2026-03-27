@@ -1,0 +1,71 @@
+package dev.gwgs.minecrafteconomy.commands;
+
+import com.google.gson.Gson;
+import com.google.gson.JsonObject;
+import com.mojang.brigadier.CommandDispatcher;
+import com.mojang.brigadier.arguments.StringArgumentType;
+import com.mojang.brigadier.context.CommandContext;
+import dev.gwgs.minecrafteconomy.items.MCEDataComponentTypes;
+import dev.gwgs.minecrafteconomy.items.MCE_Items;
+import dev.gwgs.minecrafteconomy.networking.MCENetwork;
+import dev.gwgs.minecrafteconomy.networking.MCERequests;
+import net.minecraft.commands.CommandSourceStack;
+import net.minecraft.commands.Commands;
+import net.minecraft.network.chat.Component;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+
+import java.io.IOException;
+
+public class MCE_Pay_InvoiceCommand {
+    public MCE_Pay_InvoiceCommand(CommandDispatcher<CommandSourceStack> dispatcher) {
+        dispatcher.register(Commands.literal("pay_invoice")
+                .then(Commands.argument("user_id", StringArgumentType.word()).then(Commands.argument("password", StringArgumentType.string()).executes(this::execute))));
+    }
+
+    private int execute(CommandContext<CommandSourceStack> context) {
+        ServerPlayer player = context.getSource().getPlayer();
+        Gson gson = new Gson();
+        JsonObject request = gson.fromJson(MCERequests.PAY_INVOICE.requestTemplate, JsonObject.class);
+        String user_id = StringArgumentType.getString(context, "user_id").toUpperCase();
+        String password = StringArgumentType.getString(context, "password");
+        ItemStack playerMainHand = player.getMainHandItem();
+        Item pmhI = playerMainHand.getItem().asItem();
+
+        if (pmhI.asItem() != MCE_Items.INVOICE.asItem()) {
+            context.getSource().sendFailure(Component.literal("Main Hand Item is Not an Invoice"));
+            return 0;
+        }
+
+        if (user_id.length() != 4) { context.getSource().sendFailure(Component.literal("Invalid User ID")); return 0;}
+        request.getAsJsonObject("dat").addProperty("invoice_id", playerMainHand.get(MCEDataComponentTypes.CHEQUE_INVOICE_ID));
+        request.getAsJsonObject("dat").addProperty("user_id", user_id);
+        request.getAsJsonObject("dat").addProperty("password", password);
+        JsonObject response = null;
+
+
+        try {
+            response = gson.fromJson(MCENetwork.request(request.toString()), JsonObject.class);
+        } catch (IOException | InterruptedException e) {
+            context.getSource().sendFailure(Component.literal("Error in Transaction, send to Mark or just read it ya goober: " + e.toString()));
+            return 0;
+        }
+
+
+        if (response.get("response").getAsString().equals("accept") && response.get("error").getAsString().equals("None")) {
+
+
+            playerMainHand.shrink(1);
+
+            JsonObject finalResponse = response;
+            context.getSource().sendSuccess(() -> Component.literal(finalResponse.toString()), true);
+
+            return 1;
+        } else {
+            context.getSource().sendFailure(Component.literal("Error in Transaction, send to Mark or just read it ya goober: " + response.toString()));
+            return 0;
+        }
+
+    }
+}

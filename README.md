@@ -29,15 +29,15 @@ This mod/webapp combo adds basic banking and "crypto"coin creation to Minecraft.
 
 This is a full stack project that involves the NeoForge mod backend written in Java, the website logic/backend written in Python, and the frontend written in JS.
 
-To use, you must install the necessary libraries for Python that the [code/main.py](main.py) uses, then you can run it using [code/start_server.sh](start_server.sh), or just by starting a uvicorn server yourself.
+To use, you must install the necessary libraries for Python that the [main.py](code/main.py) uses, then you can run it using [start_server.sh](code/start_server.sh), or just by starting a uvicorn server yourself.
 
-The Minecraft server must have the NeoForge mod installed, as well as, the config file of the mod must contain an API key that you generate using the [code/supplementary](supplementary.py) program, simply by calling the 
+The Minecraft server must have the NeoForge mod installed, as well as, the config file of the mod must contain an API key that you generate using the [supplementary](code/supplementary.py) program, simply by calling the 
 `createKey()` function at the end of the file.
 
 The mod config file must also contain the location of the API.
 
 ## OTHER INFO
 
-### TO READ ABOUT HOW THE .JSON FILES ARE STRUCTURED AND HOW THE NETWORKING AND BACKEND WORKS [features.md](CLICK HERE)
+### TO READ ABOUT HOW THE .JSON FILES ARE STRUCTURED AND HOW THE NETWORKING AND BACKEND WORKS [CLICK HERE](features.md)
 
-### TO READ ABOUT EACH SITE PAGE [site/features.md](CLICK HERE)
+### TO READ ABOUT EACH SITE PAGE [CLICK HERE](site/features.md)

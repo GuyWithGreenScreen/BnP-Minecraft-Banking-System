@@ -1515,18 +1515,3 @@ def index_page(request: Request):
         "coin.html",
         {"request": request}
     )
-
-#createAccount("sus", "sussy")
-#createAccount("dih", "sussy")
-#mint("minecraft:iron_ingot2", 0)
-#print(RESOURCE_JSON)7F07
-#depositCurrency(Currency.RESOURCE.value, str(input("ResourceID:")), 1000, str(input("userID:")))
-#print("\n")
-#create_coin(str(input("Backing Resource ID:")), str(input("Name:")), int(input("Mint Amount:")), int(input("Price:")), int(input("Initial Buy:")), str(input("User Id:")),
-            #str(input("Password:")))
-#sell_coin(str(input("CoinID:")), 13, str(input("UserID:")), str(input("Password:")))
-#print("\n")
-#buy_coin(str(input("CoinID:")), 50, str(input("userID:")), str(input("Password:")))
-#print("\n")
-#sell_coin(str(input("CoinID:")), int(input("Amount:")), str(input("UserID:")), str(input("Password:")))
-#print(USER_JSON["users"])

@@ -173,8 +173,6 @@ All IDs are temporary on both sides and get cleared once request is complete.
 IDs are for syncing only.
 
 ### REQUESTS
-"Error in Transaction, please send to Mark: "
-
 
 ### CREATE ACOUNT
 > REQUEST

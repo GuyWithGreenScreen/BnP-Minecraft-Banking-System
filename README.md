@@ -31,7 +31,7 @@ This is a full stack project that involves the NeoForge mod backend written in J
 
 To use, you must install the necessary libraries for Python that the [main.py](code/main.py) uses, then you can run it using [start_server.sh](code/start_server.sh), or just by starting a uvicorn server yourself.
 
-The Minecraft server must have the NeoForge mod installed, as well as, the config file of the mod must contain an API key that you generate using the [supplementary](code/supplementary.py) program, simply by calling the 
+The Minecraft server must have the NeoForge mod installed, as well as, the config file of the mod must contain an API key that you generate using the [supplementary.py](code/supplementary.py) program, simply by calling the 
 `createKey()` function at the end of the file.
 
 The mod config file must also contain the location of the API.
